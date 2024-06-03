@@ -1,4 +1,7 @@
 body {
-    background-color: white;
+    background-color: rgb(195, 195, 243);
     color: #1d1d1f;
 }
+                /* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
