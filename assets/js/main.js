@@ -1,6 +1,6 @@
 // ** SEARCH **
 const searchButton = document.getElementById("search-button"),
-  searchClose = document.getElementById("search__close"),
+  searchClose = document.getElementById("search-close"),
   searchContent = document.getElementById("search-content");
 
 /* Search show */
@@ -16,6 +16,13 @@ if (searchClose) {
     searchContent.classList.remove("show-search");
   });
 }
+                                    // LOGIN
+// LOGIN
+const loginButton = document.getElementById("login-button"),
+  loginClose = document.getElementById("login-close"),
+  loginContent = document.getElementById("login-content");
+
+
 // DARK LIGHT THEME
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";

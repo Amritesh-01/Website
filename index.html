@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   </head>
   <body>
-    <!-- header -->
+                            <!-- ####### Header ####### -->
+
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
@@ -69,15 +70,47 @@
       </nav>
     </header>
 
-                            <!-- SEARCH -->
+                            <!-- SEARCH start-->
     <div class="search" id="search-content">
         <form action="" class="search__form">
             <i class="ri-search-2-line search__icon"></i>
             <input type="search" placeholder="Type to search..." class="search__input">
         </form>
-        <i class="fa-regular fa-circle-xmark search__close" id="search__close"></i>
+        <i class="fa-regular fa-circle-xmark search__close" id="search-close"></i>
     </div>
-    <!-- ** main ** -->
+                            <!-- SEARCH end-->
+
+                            <!-- LOGIN start-->
+    <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" id="login-email" placeholder="Your Email" class="login__input">
+                </div>
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" id="login-pass" placeholder="password" class="login__input">
+                </div>
+            </div>
+            <div>
+                <span class="login__signup">
+                    Create an account <a href="#">Sign Up</a>
+                </span>
+
+                <a href="" class="login__forgot">
+                    Forgot Password?
+                </a>
+
+                <a href="#" class="login__button button">Log In</a>
+            </div>
+            <i class="fa-regular fa-circle-xmark login__close" id="login-close"></i>
+        </form>
+    </div>
+                                <!-- LOGIN end-->
+                                <!-- ** main ** -->
     <main class="main">
       <!-- home -->
       <section class="home section" id="home"></section>
