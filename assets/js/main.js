@@ -22,6 +22,20 @@ const loginButton = document.getElementById("login-button"),
   loginClose = document.getElementById("login-close"),
   loginContent = document.getElementById("login-content");
 
+/* Login show */
+if (loginButton) {
+    loginButton.addEventListener("click", () => {
+        loginContent.classList.add("show-login");
+    });
+}
+  
+/* Login hidden */
+if (loginClose) {
+    loginClose.addEventListener("click", () => {
+        loginContent.classList.remove("show-login");
+    });
+}
+
 
 // DARK LIGHT THEME
 const themeButton = document.getElementById("theme-button");
