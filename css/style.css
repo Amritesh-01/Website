@@ -91,7 +91,7 @@ img {
 .main {
     overflow: hidden;
 }
-                /* header and nav */
+                                /* header and nav */
 .header {
     border: 1px solid red;
     position: fixed;
@@ -281,6 +281,35 @@ img {
  /* show login */
 .show-login {
     top: 0;
+}
+
+                    /* ###### HOME ###### */
+.home__swiper {
+    margin: initial;
+}
+.home__container {
+    padding-top: 2rem;
+    row-gap: 2.5rem;
+}
+.home__data {
+    text-align: center;
+}
+.home__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem;
+}
+.home__description {
+    margin-bottom: 2rem;
+}
+.home__images {
+    display: grid;
+}
+.home__article, .home__img {
+    width: 250px;
+    transition: scale .4s;
+}
+.home__article {
+    scale: .8;
 }
                         /* ** BUTTON **  */
 .button {
