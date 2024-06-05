@@ -114,6 +114,10 @@ img {
 .nav__logo i {
     font-size: 2rem;
 }
+            /* ADD SHADOW HEADER */
+.shadow-header {
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
         /* Navigation For Mobile Devices */
 @media screen and (max-width: 950px) {
     .nav__menu {
