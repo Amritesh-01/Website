@@ -330,11 +330,70 @@ img {
     font-size: var(--h3-font-size);
     margin-bottom: .5rem;
 }
-                    /* ###### SERVICES  end###### */
             /* SWIPER CLASS */
 .swiper-slide-active, .swiper-slide-duplicate-active {
     scale: 1;
 }
+
+                    /* ###### SERVICES  end ###### */
+
+                    /* ###### FEATURED  start ###### */
+.featured__card {
+    position: relative;
+    text-align: center;
+    background-color: var(--container-color);
+    padding: 2rem;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    transition: border .4s, background-color .4s;
+}
+.featured__image {
+    width: 150px;
+    height: auto;
+    margin: 0 auto .75rem;
+}
+.featured__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: .5rem;
+}
+.featured__prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 1.25rem;
+}
+.featured__discount {
+    color: var(--title-color);
+}
+.featured__price {
+    font-size: var(--small-font-size);
+    text-decoration: line-through;
+}
+.featured__card .button {
+    cursor: pointer;
+}
+.featured__actions {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    position: absolute;
+    top: 2rem;
+    right: -1.5rem;
+    transition: right .4s;
+}
+.featured__actions button {
+    background-color: none;
+    font-size: 1.25rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+.featured__card:hover .featured__actions {
+    right: 1.5rem;
+}
+            /* featured swiper */
+
+                    /* ###### FEATURED  end ###### */
 
                         /* ** BUTTON **  */
 .button {
