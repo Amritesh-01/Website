@@ -12,7 +12,8 @@
                     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
                     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"/>
   </head>
   <body>
                             <!-- ####### Header ####### -->
@@ -152,18 +153,41 @@
             </div>
         </div>
       </section>
-      <!-- books -->
-      <section class="books section" id="books"></section>
-      <!-- other accessories -->
-      <section class="other_accessories section" id="other_accessories"></section>
-      <!-- stationary -->
-      <section class="stationary section" id="stationary"></section>
-      <!-- school items -->
-      <section class="school_items section" id="school_items"></section>
+                          <!-- SERVICES -->
+      <section class="services section" id="services">
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3 class="services__title">Free Shipping</h3>
+            <p class="services__description">Order More than Rs.100</p>
+          </article>
+          <article class="services__card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3 class="services__title">Secure Payment</h3>
+            <p class="services__description">100% Secure Payment</p>
+          </article>
+          <article class="services__card">
+            <i class="fa-solid fa-headset"></i>
+            <h3 class="services__title">24/7 Support</h3>
+            <p class="services__description">Call/Text Us Anytime</p>
+          </article>
+        </div>
+      </section>
+                          <!-- FEATURED -->
+      <section class="featured section" id="featured"></section>
+                          <!-- DISCOUNT -->
+      <section class="discount section" id="discount"></section>
+                          <!-- NEW BOOKS -->
+      <section class="new section" id="new"></section>
     </main>
   </body>
                     <!-- SWIPER JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+  </script>
                     <!-- MAIN JS -->
   <script src="./assets/js/main.js"></script>
 </html>

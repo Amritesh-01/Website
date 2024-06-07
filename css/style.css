@@ -283,13 +283,13 @@ img {
     top: 0;
 }
 
-                    /* ###### HOME ###### */
+                    /* ###### HOME  start ###### */
 .home__swiper {
     margin: initial;
 }
 .home__container {
-    padding-top: 2rem;
-    row-gap: 2.5rem;
+    padding-top: 1rem;
+    row-gap: 1.5rem;
 }
 .home__data {
     text-align: center;
@@ -306,11 +306,31 @@ img {
 }
 .home__article, .home__img {
     width: 220px;
-    transition: scale .4s;
+    /* transition: scale .4s; */
 }
 .home__article {
-    scale: .8;
+    scale: 0.8;
 }
+                    /* ###### HOME  end ###### */
+
+                    /* ###### SERVICES  start###### */
+.services__container {
+    row-gap: 3rem;
+}
+.services__card {
+    text-align: center;
+}
+.services__card i {
+    display: block;
+    font-size: 3rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+.services__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+                    /* ###### SERVICES  end###### */
             /* SWIPER CLASS */
 .swiper-slide-active, .swiper-slide-duplicate-active {
     scale: 1;
