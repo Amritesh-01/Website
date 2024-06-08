@@ -408,6 +408,35 @@ img {
 }
                     /* ###### FEATURED  end ###### */
 
+                    /* ###### DISCOUNT  start ###### */
+.discount__container {
+    row-gap: 3.5rem;
+}
+.discount__data {
+    text-align: center;
+}
+.discount__title {
+    margin-bottom: 1rem;
+}
+.discount__description {
+    margin-bottom: 2rem;
+}
+.discount__images {
+    display: flex;
+    justify-content: center;
+}
+.discount__image_1,
+.discount__image_2 {
+    width: 170px;
+}
+.discount__image_1 {
+    transform: translateX(1rem) rotate(-10deg);
+}
+.discount__image_2 {
+    transform: translateX(-1rem) rotate(10deg);
+}
+                    /* ###### DISCOUNT  end ###### */
+
                         /* ** BUTTON **  */
 .button {
     display: inline-block;
