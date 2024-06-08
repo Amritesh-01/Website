@@ -394,13 +394,15 @@ img {
             /* featured swiper */
 .swiper-button-prev::after,.swiper-button-next::after {
     content: '';
+    display: none;
 }
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev i, .swiper-button-next i {
     width: initial;
     height: initial;
-    background-color: transparent;
+    background-color: var(--border-color);
+    border: 2px solid var(--border-color);
     padding: .5rem;
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     color: var(--first-color);
     transition: border .4s background-color .4s;
 }
