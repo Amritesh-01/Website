@@ -78,6 +78,19 @@ let swiperFeatured = new Swiper('.featured__swiper', {
   }
 });
 
+                        //  ###### NEW BOOK SWIPER ######
+let swiperNew = new Swiper('.new__swiper', {
+  loop: true,
+  spaceBetween: 16,
+  slidesPerView: 'auto',
+
+  breakpoints: {
+    1150: {
+      slidesPerView: 3,
+    }
+  }
+});
+
                             // ADD SHADOW HEADER
 const shadowHeader = () =>{
     const header = document.getElementById('header')
