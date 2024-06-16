@@ -142,7 +142,7 @@ const selectedIcon = localStorage.getItem("selected-icon");
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "ri-contrast-2-fill" : "ri-sun-line";
+  themeButton.classList.contains(iconTheme) ? "ri-moon-fill" : "ri-sun-line";
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
@@ -150,7 +150,7 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
-  themeButton.classList[selectedIcon === "ri-contrast-2-fill" ? "add" : "remove"](
+  themeButton.classList[selectedIcon === "ri-moon-fill" ? "add" : "remove"](
     iconTheme
   );
 }
@@ -164,3 +164,18 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+        // SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: '2500',
+  delay: '400',
+  // reset: 'true', //animations repeat
+})
+
+sr.reveal (`.home__data, .featured__container, .new__container, .join__data, .footer`)
+sr.reveal (`.home__images`, {delay: 600})
+sr.reveal (`.services__card`, {interval: 100})
+sr.reveal (`.discount__data`, {origin: 'left'})
+sr.reveal (`.discount__images`, {origin: 'right'})
